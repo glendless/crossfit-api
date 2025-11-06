@@ -1,5 +1,3 @@
-// In src/controllers/workoutController.js
-
 const workoutService = require("../services/workoutService");
 
 const getAllWorkouts = (req, res) => {
