@@ -1,36 +1,29 @@
-# REST API Design Backend Project
+# CrossFit API
 
-This project is a simple REST API design for a backend application using Node.js and Express.js. It is intended to be a starting point for building a full-featured REST API.
+A RESTful API built with Node.js and Express.js to manage CrossFit workouts.
 
 ## Features
 
-- Basic CRUD operations for a single resource (e.g. users)
-- Validation and sanitization of API requests
-- Support for JSON and URL-encoded data
-- Error handling and logging
+- Create, Read, Update, Delete (CRUD) operations for workouts.
+- Validate input data using Express-Validator.
+- Use UUID to generate unique IDs for workouts.
 
-## Technologies Used
+## Endpoints
 
-- Node.js
-- Express.js
-- JSON Schema validation
+- `GET /workouts`: Retrieve a list of all workouts.
+- `GET /workouts/:id`: Retrieve a specific workout by ID.
+- `POST /workouts`: Create a new workout.
+- `PUT /workouts/:id`: Update a specific workout by ID.
+- `DELETE /workouts/:id`: Delete a specific workout by ID.
 
-## Getting Started
+## Installation
 
-1. Clone the repository and run `npm install` to install the dependencies.
-2. Start the server by running `npm run dev`.
-3. Use a tool like Postman to test the API endpoints.
-
-## API Endpoints
-
-### Users
-
-- `GET /users`: Retrieve a list of all users.
-- `GET /users/:id`: Retrieve a single user by ID.
-- `POST /users`: Create a new user.
-- `PUT /users/:id`: Update an existing user.
-- `DELETE /users/:id`: Delete a user.
+- Clone the repository using `git clone`.
+- Install the dependencies using `npm install`.
+- Start the server using `npm run dev`.
 
 ## Contributing
 
-Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
